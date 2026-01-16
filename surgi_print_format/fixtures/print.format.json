@@ -1,1 +1,42 @@
-
+[
+    {
+        "name": "Surgi Sales Order",
+        "standard": "No",
+        "print_designer_print_format": "{\"header\":{\"firstPage\":[{\"id\":\"VDLhOQwRjW\",\"type\":\"rectangle\",\"childrens\":[{\"id\":\"pPRThVRcYf\",\"type\":\"rectangle\",\"childrens\":[{\"id\":\"HOROhNyeTV\",\"type\":\"text\",\"content\":\"SurgiShop, 19235 N US Highway 41, Lutz, FL 33549, +18557202285, accounting@surgishop.com, SurgiShop.com\"}]}]}]}}",
+        "print_format_for": "DocType",
+        "doctype": "Print Format",
+        "doc_type": "Sales Order",
+        "print_format_type": "Jinja",
+        "custom_css": ":root { --scale-factor: 1px; } .staticText { font-family: Inter; }",
+        "margin_top": 15,
+        "margin_bottom": 15,
+        "margin_left": 15,
+        "margin_right": 15
+    },
+    {
+        "name": "Surgi Sales Invoice",
+        "standard": "No",
+        "print_format_for": "DocType",
+        "doctype": "Print Format",
+        "doc_type": "Sales Invoice",
+        "print_format_type": "Jinja",
+        "custom_css": ":root { --scale-factor: 1px; }",
+        "margin_top": 15,
+        "margin_bottom": 15,
+        "margin_left": 15,
+        "margin_right": 15
+    },
+    {
+        "name": "Surgi Customer Statement",
+        "standard": "No",
+        "print_format_for": "DocType",
+        "doctype": "Print Format",
+        "doc_type": "Customer Statement",
+        "print_format_type": "Jinja",
+        "html": "{# --- Initialize and calculate balance first --- #}\n{% set ns = namespace(balance=0) %}\n<div class='print-heading'>Customer Statement</div>",
+        "margin_top": 15,
+        "margin_bottom": 15,
+        "margin_left": 15,
+        "margin_right": 15
+    }
+]
