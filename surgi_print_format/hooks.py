@@ -5,11 +5,4 @@ app_description = "Help transfer custom print formats"
 app_email = "gary.starr@surgishop.com"
 app_license = "MIT"
 
-fixtures = [
-    {
-        "dt": "Print Format",
-        "filters": [
-            ["print_designer", "=", 1]
-        ]
-    }
-]
+fixtures = ["Print Format"]
